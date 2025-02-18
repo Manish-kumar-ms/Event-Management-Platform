@@ -24,6 +24,10 @@ const Home = () => {
         },
       });
 
+      if(!response.ok){
+        navigate("/login")
+      }
+
       const result = await response.json();
       if (result.success) {
         setEvents(result.data); // Update the events state

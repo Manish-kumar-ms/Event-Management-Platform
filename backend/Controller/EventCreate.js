@@ -13,7 +13,7 @@ export const eventcreate= async (req,res)=>{
             message: "Unauthorized. Please log in.",
             success: false,
         });
-    }
+      }
      
             // check any field is empty or not
             if(!eventname || !description || !date){
